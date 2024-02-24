@@ -1,38 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'PeckhamPress';
+  src: url(../public/fonts/PeckhamPress-Trial.otf) format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+}
+
+p {
+  color: #fff;
+}
+
 .App {
-  text-align: center;
+  background-color: #000000;
+  padding: 0 120px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-div {
+  padding: 55px 0 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-div img {
+  width: 9.938rem;
+  height: 4.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 40px;
+  /* border: 2px solid red; */
+}
+
+.left-section {
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+h1 {
+  font-family: 'PeckhamPress', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 560px;
+  /* width: 35rem; */
+  margin-bottom: 10px;
+  /* border: 2px solid blue; */
+}
+
+.sub-title {
+  color: #808080;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  width: 443px;
+  width: 27.688rem;
+}
+
+button {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: Inter;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  width: 191px;
+  background-color: #2BF6FA;
+  padding: 22px;
+  color: #000000;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button span {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buy-now-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  margin-top: 52px;
+}
+
+.free {
+  color: #2BF6FA;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 29px;
+}
+
+.afterpay-and-zip-logo-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 28px;
+  margin-top: 35px;
+}
+
+.afterpay-logo {
+  width: 172px;
+  height: 41.61px;
+}
+
+.zip-logo {
+  width: 98px;
+  height: 40.58px;
+}
+
+.booster-img-div {
+  width: 100%;
+  height: 700px;
+  
+}
+
+.booster-img-div img {
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+/* Animation component */
+.animation-div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 14px;
+  margin-bottom: 41px;
+  padding-top: 41px;
+  width: 542px;
+  /* border: 2px solid blue; */
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 6px;
+}
+
+.first-para {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.first-para span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.second-para {
+  width: 100%;
+  color: #808080;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.star-icon-div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2px;
+}
+
+.star-icon-div img {
+  width: 28px;
 }
