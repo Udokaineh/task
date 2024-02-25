@@ -1,6 +1,6 @@
-import HeroPage from './HeroPage';
-
+import HeroPage from './components/HeroPage';
 import './App.css';
+import './components/animate.css'
 
 function App() {
   return (

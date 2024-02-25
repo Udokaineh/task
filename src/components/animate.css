@@ -1,0 +1,77 @@
+ .n0 {
+     animation: changeNumber 1s ease-out forwards;
+ }
+
+ .n1 {
+     animation: changeNumber 2s ease-out forwards;
+ }
+
+ .n2 {
+     animation: changeNumber 2s ease-out forwards;
+ }
+
+ .n3 {
+     animation: changeNumber 3s ease-out forwards;
+ }
+
+ .n4 {
+     animation: changeNumber 3s ease-out forwards;
+ }
+
+ .n4 {
+     animation: changeNumber 4s ease-out forwards;
+ }
+
+ .n5 {
+     animation: changeNumber 3s ease-out forwards;
+ }
+
+
+ @keyframes fadeInUp {
+     0% {
+         transform: translateY(70px);
+     }
+
+     100% {
+         transform: translateY(0px);
+     }
+ }
+
+ @keyframes display {
+     0% {
+         opacity: 0;
+     }
+
+     50% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ @keyframes changeNumber {
+     0% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+
+     20% {
+         transform: translateY(-10px);
+     }
+
+     50% {
+         transform: translateY(-40px);
+     }
+
+     70% {
+         transform: translateY(10px);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
