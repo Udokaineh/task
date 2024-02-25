@@ -29,20 +29,20 @@ const Animation = () => {
         }, 200)
 
         const timeout2 = setTimeout(() => {
-            setNumber(["0", "1", "2", "5", "6", "7"])
+            setNumber(["0", "1", "2", "4", "5", "6"])
         }, 400)
 
         const timeout3 = setTimeout(() => {
-            setNumber(["1", "2", "3", "6", "7", "8"])
+            setNumber(["1", "2", "3", "5", "6", "6"])
         }, 800)
 
         const timeout4 = setTimeout(() => {
-            setNumber(["1", "2", "3", "7", "8", "9"])
+            setNumber(["1", "2", "3", "5", "6", "7"])
         }, 1000)
 
         const timeout5 = setTimeout(() => {
             setNumber(["1", "0", "0", "0", "0", "+"])
-        }, 1500)
+        }, 1200)
 
         // Clean up timeouts on component unmount
         return () => {

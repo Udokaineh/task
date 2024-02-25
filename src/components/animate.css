@@ -3,33 +3,33 @@
  }
 
  .n1 {
-     animation: changeNumber 2s ease-out forwards;
+     animation: changeNumber 1s ease-out forwards 0.4s
  }
 
  .n2 {
-     animation: changeNumber 2s ease-out forwards;
+     animation: changeNumber 1s ease-out forwards 0.3s
  }
 
  .n3 {
-     animation: changeNumber 3s ease-out forwards;
+     animation: changeNumber 1s ease-out forwards 0.2s
  }
 
  .n4 {
-     animation: changeNumber 3s ease-out forwards;
+     animation: changeNumber 1s ease-out forwards 0.1s
  }
 
  .n4 {
-     animation: changeNumber 3.5s ease-out forwards;
+     animation: changeNumber 2s ease-out forwards 0.1s
  }
 
  .n5 {
-     animation: changeNumber 3s ease-out forwards;
+     animation: changeNumber 1s ease-out forwards 0.4s
  }
 
 
  @keyframes fadeInUp {
      0% {
-         transform: translateY(70px);
+         transform: translateY(100px);
      }
 
      100% {
