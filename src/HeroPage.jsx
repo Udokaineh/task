@@ -15,7 +15,7 @@ const HeroPage = () => {
                     </div>
                     <Animation />
                     <button>buy now
-                        {/* <span>(Risk free 30 day trials)</span> */}
+                        <span>(Risk free 30 day trials)</span>
                     </button>
                     <div className="buy-now-div">
                         <p>Buy now, pay later option available</p>
