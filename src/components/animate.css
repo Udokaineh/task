@@ -3,11 +3,11 @@
  }
 
  .n1 {
-     animation: changeNumber 1s ease-out forwards 0.4s
+     animation: changeNumber 1s ease-out forwards 0.1s
  }
 
  .n2 {
-     animation: changeNumber 1s ease-out forwards 0.3s
+     animation: changeNumber 1s ease-out forwards 0.1s
  }
 
  .n3 {
@@ -15,15 +15,15 @@
  }
 
  .n4 {
-     animation: changeNumber 1s ease-out forwards 0.1s
+     animation: changeNumber 1s ease-out forwards 0.2s
  }
 
  .n4 {
-     animation: changeNumber 2s ease-out forwards 0.1s
+     animation: changeNumber 1s ease-out forwards 0.3s
  }
 
  .n5 {
-     animation: changeNumber 1s ease-out forwards 0.4s
+     animation: changeNumber 1s ease-out forwards 0.3s
  }
 
 
@@ -51,6 +51,8 @@
      }
  }
 
+
+/* Add more for additional digits */
  @keyframes changeNumber {
      0% {
          transform: translateY(0);

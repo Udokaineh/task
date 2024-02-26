@@ -145,7 +145,10 @@ button span {
   width: 100%;
 }
 
-
+.slot{
+  display: flex;
+  flex-direction: column;
+}
 /* Animation component */
 .animation-div {
   display: grid;
@@ -205,7 +208,9 @@ button span {
   width: 28px;
   height: 38px;
 }
-
+.slot-counter {
+  display: flex;
+}
 
 
 /* media queries */

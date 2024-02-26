@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Animation = () => {
     const [value, setValue] = useState(["0", "1"])
-    const [number, setNumber] = useState(["0", "1", "2", "3", "4", "5"])
+    const [number, setNumber] = useState(["1", "0", "0", "0", "0", "+"])
 
     useEffect(() => {
         const timeout1 = setTimeout(() => {
@@ -25,24 +25,24 @@ const Animation = () => {
 
     useEffect(() => {
         const timeout1 = setTimeout(() => {
-            setNumber(["0", "1", "2", "4", "5", "6"])
+            setNumber(["0", "1", "1", "1", "1", "1"])
         }, 200)
 
         const timeout2 = setTimeout(() => {
-            setNumber(["0", "1", "2", "4", "5", "6"])
+            setNumber(["0", "1", "2", "2", "3", "4"])
         }, 400)
 
         const timeout3 = setTimeout(() => {
-            setNumber(["1", "2", "3", "5", "6", "6"])
-        }, 800)
+            setNumber(["1", "2", "3", "3", "4", "5"])
+        }, 600)
 
         const timeout4 = setTimeout(() => {
-            setNumber(["1", "2", "3", "5", "6", "7"])
-        }, 1000)
+            setNumber(["1", "2", "3", "4", "5", "6"])
+        }, 800)
 
         const timeout5 = setTimeout(() => {
             setNumber(["1", "0", "0", "0", "0", "+"])
-        }, 1200)
+        }, 1000)
 
         // Clean up timeouts on component unmount
         return () => {
