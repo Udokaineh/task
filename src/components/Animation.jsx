@@ -1,92 +1,48 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import SlotCounter from 'react-slot-counter';
 
-const Animation = () => {
-    const [value, setValue] = useState(["0", "1"])
-    const [number, setNumber] = useState(["1", "0", "0", "0", "0", "+"])
-
-    useEffect(() => {
-        const timeout1 = setTimeout(() => {
-            setValue(["0", "2"])
-        }, 200)
-        const timeout2 = setTimeout(() => {
-            setValue(["1", "3"])
-        }, 400)
-        const timeout3 = setTimeout(() => {
-            setValue(["1", "8"])
-        }, 600)
-
-        // Clean up timeouts on component unmount
-        return () => {
-            clearTimeout(timeout1)
-            clearTimeout(timeout2)
-            clearTimeout(timeout3)
-        }
-    }, [])
-
-    useEffect(() => {
-        const timeout1 = setTimeout(() => {
-            setNumber(["0", "1", "1", "1", "1", "1"])
-        }, 200)
-
-        const timeout2 = setTimeout(() => {
-            setNumber(["0", "1", "2", "2", "3", "4"])
-        }, 400)
-
-        const timeout3 = setTimeout(() => {
-            setNumber(["1", "2", "3", "3", "4", "5"])
-        }, 600)
-
-        const timeout4 = setTimeout(() => {
-            setNumber(["1", "2", "3", "4", "5", "6"])
-        }, 800)
-
-        const timeout5 = setTimeout(() => {
-            setNumber(["1", "0", "0", "0", "0", "+"])
-        }, 1000)
-
-        // Clean up timeouts on component unmount
-        return () => {
-            clearTimeout(timeout1)
-            clearTimeout(timeout2)
-            clearTimeout(timeout3)
-            clearTimeout(timeout4)
-            clearTimeout(timeout5)
-        }
-    }, []);
-
+function Animationn() {
     return (
-        <div className="animation-div">
-            <div className="wrapper">
-                <p className="first-para">
-                    <span className="n0">{value[0]}</span>
-                    <span className="n1">{value[1]}</span>
+        <div className='slot-container'>
+            <div>
+                <div className="first-div">
+                    <SlotCounter value={18} animateUnchanged={true} />
                     <span className="months">Months</span>
-                </p>
+                </div>
                 <p className="second-para">Included Warranty</p>
             </div>
-            <div className="wrapper">
-                <p className="first-para">
-                    <span className="n0">{number[0]}</span>
-                    <span className="n1">{number[1]}</span>
-                    <span className="n2">{number[2]}</span>
-                    <span className="n3">{number[3]}</span>
-                    <span className="n4">{number[4]}</span>
-                    <span className="n5">{number[5]}</span>
-                </p>
+            <div>
+                <div className="first-div">
+                    <SlotCounter value={10000} animateUnchanged={true} />
+                    <SlotCounter value={"+"} />
+                </div>
                 <p className="second-para">Loyal customers</p>
             </div>
-            <div className="wrapper">
-                <div className="star-icon-div">
-                    <img src="Assets/star-img.svg" alt="star icon" />
-                    <img className="n0" src="Assets/star-img.svg" alt="star icon" />
-                    <img className="n1" src="Assets/star-img.svg" alt="star icon" />
-                    <img className="n2" src="Assets/star-img.svg" alt="star icon" />
-                    <img className="n3" src="Assets/star-img.svg" alt="star icon" />
+            <div>
+                <div className="first-div">
+                    <SlotCounter
+                        value={[
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />
+                        ]}
+                        dummyCharacters={[
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />,
+                            <img src="Assets/star-img.svg" alt="star icon" />
+                        ]}
+                        animateUnchanged={true}
+                    />
                 </div>
                 <p className="second-para">Stars</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default Animation
+
+export default Animationn;
