@@ -6,15 +6,15 @@ function Animationn() {
         <div className="slot-container animate__animated animate__fadeInUp">
             <div>
                 <div className="first-div">
-                    <SlotCounter value={18} animateUnchanged={true} autoAnimationStart={true}  duration={1}  />
+                    <SlotCounter value={18} animateUnchanged={true} autoAnimationStart={true}  duration={1.5}  />
                     <span className="months">Months</span>
                 </div>
                 <p className="second-para">Included Warranty</p>
             </div>
             <div>
                 <div className="first-div">
-                    <SlotCounter value={10000} animateUnchanged={true} autoAnimationStart={true}  duration={1}  />
-                    <SlotCounter value={"+"}  duration={1} />
+                    <SlotCounter value={10000} animateUnchanged={true} autoAnimationStart={true}  duration={1.5} />
+                    <SlotCounter value={"+"}  duration={1.5} />
                 </div>
                 <p className="second-para">Loyal customers</p>
             </div>
@@ -37,7 +37,7 @@ function Animationn() {
                         ]}
                         animateUnchanged={true}
                         autoAnimationStart={true} 
-                        duration={1}
+                        duration={1.5}
                     />
                 </div>
                 <p className="second-para">Stars</p>

@@ -234,15 +234,11 @@ button span {
     line-height: 50px;
   }
 
-  .animation-div {
+  .slot-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 14px;
-    row-gap: 14px;
-  }
-
-  .first-para {
-    font-size: 24px;
+    column-gap: 10px;
+    row-gap: 10px;
   }
 
   button {
