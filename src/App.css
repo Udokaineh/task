@@ -217,6 +217,7 @@ button span {
 @media(max-width: 540px) {
   .App {
     padding: 0 40px;
+    padding-bottom: 2rem;
   }
 
   .logo-div img {
