@@ -11,14 +11,14 @@ const HeroPage = () => {
             <div className="hero-wrapper">
                 <div className="left-section">
                     <div>
-                        <h1>Trusted by Athletes</h1>
-                        <p className="sub-title">Integrated with A.I to ensure your massage pressure is never compromised</p>
+                        <h1 class="animate__animated animate__fadeInUp">Trusted by Athletes</h1>
+                        <p className="sub-title animate__animated  animate__fadeInUp">Integrated with A.I to ensure your massage pressure is never compromised</p>
                     </div>
                     <Animation />
                     <Button />
                 </div>
 
-                <div className="booster-img-div">
+                <div className="booster-img-div animate__animated animate__fadeInUp">
                     <img src="Assets/booster-img.svg" alt="booster" />
                 </div>
             </div>

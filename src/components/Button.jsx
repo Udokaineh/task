@@ -13,7 +13,7 @@ const Button = () => {
 
     return (
         <div>
-            <button>buy now
+            <button className="animate__animated animate__fadeInUp">buy now
                 {showSpan && <span>(Risk free 30 day trials)</span>}
             </button>
             <div className="buy-now-div">

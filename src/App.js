@@ -1,5 +1,6 @@
 import HeroPage from './components/HeroPage';
 import './App.css';
+import 'animate.css';
 
 
 function App() {

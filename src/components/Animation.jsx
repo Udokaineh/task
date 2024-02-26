@@ -3,7 +3,7 @@ import SlotCounter from 'react-slot-counter';
 
 function Animationn() {
     return (
-        <div className='slot-container'>
+        <div className="slot-container animate__animated animate__fadeInUp">
             <div>
                 <div className="first-div">
                     <SlotCounter value={18} animateUnchanged={true} autoAnimationStart={true}  duration={1}  />
