@@ -6,14 +6,14 @@ function Animationn() {
         <div className='slot-container'>
             <div>
                 <div className="first-div">
-                    <SlotCounter value={18} animateUnchanged={true} />
+                    <SlotCounter value={18} animateUnchanged={true} autoAnimationStart={true}  />
                     <span className="months">Months</span>
                 </div>
                 <p className="second-para">Included Warranty</p>
             </div>
             <div>
                 <div className="first-div">
-                    <SlotCounter value={10000} animateUnchanged={true} />
+                    <SlotCounter value={10000} animateUnchanged={true} autoAnimationStart={true}  />
                     <SlotCounter value={"+"} />
                 </div>
                 <p className="second-para">Loyal customers</p>
@@ -36,6 +36,7 @@ function Animationn() {
                             <img src="Assets/star-img.svg" alt="star icon" />
                         ]}
                         animateUnchanged={true}
+                        autoAnimationStart={true} 
                     />
                 </div>
                 <p className="second-para">Stars</p>

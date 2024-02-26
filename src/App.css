@@ -145,11 +145,6 @@ button span {
   width: 100%;
 }
 
-.slot {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Animation component */
 .slot-container {
   color: #fff;
